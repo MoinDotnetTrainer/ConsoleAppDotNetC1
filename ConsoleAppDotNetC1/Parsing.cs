@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassExample;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,9 @@ namespace ConsoleAppDotNetC1
             //string str1 = null;// try parse
             //int x1 = int.Parse(str1);  // error , will not accept null value
             //Console.WriteLine(x1);
+
+            ReturnType r = new ReturnType();
+            r.Add();  //new memory
 
             string Uname = null;
 
