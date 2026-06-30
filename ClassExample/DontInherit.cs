@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassExample
 {
-    public sealed class DontInherit
+    public  class DontInherit
     {
         public int x, y, z;
     }
@@ -18,5 +18,10 @@ namespace ClassExample
             z = x + y;
             return z;
         }
+    }
+
+    public class C1 //: GetData , DontInherit
+    { 
+    
     }
 }

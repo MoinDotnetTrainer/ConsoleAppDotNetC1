@@ -91,15 +91,27 @@ namespace ConsoleAppDotNetC1
             //Orders.Profit();
 
 
-            Parent p = new Parent();
-           // p.Add();
-           // p.Sub();
-            Child c = new Child();
-            c.Mul();
+            // Parent p = new Parent();
+            // p.Add();
+            // p.Sub();
+            // Child c = new Child();
+            // c.Mul();
             // c.Div();
 
-            c.Add();
-            c.Sub();
+            // c.Add();
+            // c.Sub();
+
+            //  ChildClass obj = new ChildClass();
+
+            RBIBank bank = new RBIBank();
+            bank.Withdraw();
+            bank.Deposite();
+            bank.StaffSalary();
+            bank.Loans();
+
+            SBI sbi = new SBI();
+            sbi.Withdraw();
+            sbi.StaffSalary();
 
         }
     }
