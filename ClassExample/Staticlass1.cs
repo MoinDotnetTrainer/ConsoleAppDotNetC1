@@ -1,27 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ClassExample
 {
-    public class StaticMethod
+    public static class Staticlass1
     {
-        public static void M1() {  // class name
+        static Staticlass1()
+        { // default
+            Console.WriteLine("Static constr");
+        }
+        
+        public static void M1()
+        {
             Console.WriteLine("m1");
         }
+
         public static void M2()
-        {
+        {   // object
             Console.WriteLine("m2");
-        }
-        public static void M3()
-        {
-            Console.WriteLine("m3");
-        }
-        public  void M4()  // object
-        {
-            Console.WriteLine("m4");
         }
     }
 }

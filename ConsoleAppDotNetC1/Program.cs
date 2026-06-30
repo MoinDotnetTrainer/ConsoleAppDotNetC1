@@ -4,8 +4,9 @@ using ControlStatements;
 using ClassExample;
 namespace ConsoleAppDotNetC1
 {
-    internal class Program
+    public class Program
     {
+        
         static void Main(string[] args)  // enter point of the application
         {
             /* Console.WriteLine("Hello, World!");
@@ -56,26 +57,50 @@ namespace ConsoleAppDotNetC1
             //s.Sub(34,5);
             //s.Userdata("xyz","hyd");
 
-            ReturnType r = new ReturnType();
-            r.Add();  // memory
-            int res = ReturnType.Sub();
-            if (res == 0)
-            {
-                Console.WriteLine("do this");
-            }
-            else
-            {
-                Console.WriteLine(" do that");
-            }
+            /* ReturnType r = new ReturnType();
+             r.Add();  // memory
+             int res = ReturnType.Sub();
+             if (res == 0)
+             {
+                 Console.WriteLine("do this");
+             }
+             else
+             {
+                 Console.WriteLine(" do that");
+             }
 
-            (int sno, string msg) = r.M1();
-            Console.WriteLine(sno);
-            Console.WriteLine(msg);
+             (int sno, string msg) = r.M1();
+             Console.WriteLine(sno);
+             Console.WriteLine(msg);
 
-            StaticMethod.M1();
+             StaticMethod.M1();
 
 
-            MethodOverloading.M1();
+             MethodOverloading.M1();
+            */
+
+            // Staticlass1.M1();
+            // Staticlass1.M2();
+
+            //   ConstrExample obj = new ConstrExample(23,"hi");
+
+
+
+            //Orders.Inventory();
+            //Orders.Sales();
+            //Orders.Profit();
+
+
+            Parent p = new Parent();
+           // p.Add();
+           // p.Sub();
+            Child c = new Child();
+            c.Mul();
+            // c.Div();
+
+            c.Add();
+            c.Sub();
+
         }
     }
 }
