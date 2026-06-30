@@ -6,7 +6,7 @@ namespace ConsoleAppDotNetC1
 {
     public class Program
     {
-        
+
         static void Main(string[] args)  // enter point of the application
         {
             /* Console.WriteLine("Hello, World!");
@@ -103,15 +103,42 @@ namespace ConsoleAppDotNetC1
 
             //  ChildClass obj = new ChildClass();
 
-            RBIBank bank = new RBIBank();
-            bank.Withdraw();
-            bank.Deposite();
-            bank.StaffSalary();
-            bank.Loans();
+            //RBIBank bank = new RBIBank();
+            //bank.Withdraw();
+            //bank.Deposite();
+            //bank.StaffSalary();
+            //bank.Loans();
 
-            SBI sbi = new SBI();
-            sbi.Withdraw();
-            sbi.StaffSalary();
+            //SBI sbi = new SBI();
+            //sbi.Withdraw();
+            //sbi.StaffSalary();
+
+            //ExceptionHandling.Div();
+
+
+            //   refout.Exe();
+
+
+            /*  try
+              {
+                  Props.x_ = 34;
+                  Props.y_ = 34;
+                  Props.Add();
+              }
+              catch (Exception ex)
+              {
+                  Console.WriteLine(ex.Message);
+              }
+            */
+
+            //OutKeyword.Cal(12, 3, out int add, out int sub);
+            //Console.WriteLine(add);
+            //Console.WriteLine(sub);
+
+
+            Products obj = new Products();
+            obj.ProductsInv();
+            obj.ProductsSales();
 
         }
     }
