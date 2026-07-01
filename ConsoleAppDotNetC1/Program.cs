@@ -202,28 +202,45 @@ namespace ConsoleAppDotNetC1
             // Unamed methods or annomnus methods 
 
 
-            CallingDel obj = delegate ()
-            {
-                Console.WriteLine("one line of Code ");
-            };
-            obj.Invoke();
+            /*  CallingDel obj = delegate ()
+              {
+                  Console.WriteLine("one line of Code ");
+              };
+              obj.Invoke();
 
-            CallingDel obj1 = () =>
-            {
-                Console.WriteLine("Exe");
-            };
-            obj1.Invoke();
-
-
-            CallingDel1 obj2 = (x) =>
-            {
-                Console.WriteLine("Exe");
-                return x;
-            };
-            obj2.Invoke(23);
+              CallingDel obj1 = () =>
+              {
+                  Console.WriteLine("Exe");
+              };
+              obj1.Invoke();
 
 
+              CallingDel1 obj2 = (x) =>
+              {
+                  Console.WriteLine("Exe");
+                  return x;
+              };
+              obj2.Invoke(23);
 
+              */
+
+
+
+            // sub threads using thread class
+
+            /*  Thread t1 = new Thread(MultiThread.M1);  // t1 sub thread
+              Thread t2 = new Thread(MultiThread.M2);  // t2 sub thread
+
+              t1.Start();
+              t2.Start();
+
+              */
+
+
+            Task t1 = new Task(AsyncProggramming.Exe1);
+            t1.Start();
+            t1.Wait();
+            Console.ReadKey();
         }
     }
 }
