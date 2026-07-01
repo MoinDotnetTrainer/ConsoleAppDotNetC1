@@ -1,7 +1,8 @@
-﻿using Myproject;
-using Banking;
-using ControlStatements;
+﻿using Banking;
 using ClassExample;
+using ControlStatements;
+using Myproject;
+using System.Collections.Generic;
 namespace ConsoleAppDotNetC1
 {
     public class Program
@@ -136,9 +137,92 @@ namespace ConsoleAppDotNetC1
             //Console.WriteLine(sub);
 
 
-            Products obj = new Products();
-            obj.ProductsInv();
-            obj.ProductsSales();
+            //Products obj = new Products();
+            //obj.ProductsInv();
+            //obj.ProductsSales();
+
+            /*  GenMethod.Test(12, 34);
+              GenMethod.Test1<int>(23, 2); // method with type as an argument  
+              GenMethod.Test1<string>("23", "hi");
+              GenMethod.Test1<bool>(true, false);
+
+              GenMethod.Test2<int, string>(12, "hi");
+              GenMethod.Test2<int, int>(12, 23);
+              GenMethod.Test2<string, string>("12", "hi");
+            */
+
+
+
+            /* GenClass<int> obj = new GenClass<int>();
+             obj.Test1(12);
+
+             obj.Test2(12, 67);
+
+             GenClass<bool> obj1 = new GenClass<bool>();
+             obj1.Test1(true);
+
+             obj1.Test2(true, false);
+
+             GenClass<string> obj2 = new GenClass<string>();
+            */
+
+            // Collections.NonGen();
+
+            // AddData.AddStdData();
+
+            /* DelegatesExample obj = new DelegatesExample();
+             //obj.Add();  --> spin 
+             //obj.Sub();  --> dry 
+             //obj.Mul(12,2); -->
+             //obj.Div(12,2);
+
+             MyDelegate1 mydel = new MyDelegate1(obj.Add);
+             mydel.Invoke();
+
+             MyDelegate1 mydel1 = new MyDelegate1(obj.Sub);
+             mydel1.Invoke();
+
+             // single cast & multi cast
+
+             MyDelegate2 mydel2 = new MyDelegate2(obj.Mul);
+             mydel2 += new MyDelegate2(obj.Div);
+             mydel2 -= new MyDelegate2(obj.fact);
+             //+=
+             mydel2.Invoke(12,2);  // caller function is decideing what to exe wjat not to exe
+
+
+             // Y we need to use delegates
+
+             // Washing machine --> 
+             // switch -->water --> surf --> comfort --> spin --> soak
+
+             */
+
+
+            // Unamed methods or annomnus methods 
+
+
+            CallingDel obj = delegate ()
+            {
+                Console.WriteLine("one line of Code ");
+            };
+            obj.Invoke();
+
+            CallingDel obj1 = () =>
+            {
+                Console.WriteLine("Exe");
+            };
+            obj1.Invoke();
+
+
+            CallingDel1 obj2 = (x) =>
+            {
+                Console.WriteLine("Exe");
+                return x;
+            };
+            obj2.Invoke(23);
+
+
 
         }
     }
