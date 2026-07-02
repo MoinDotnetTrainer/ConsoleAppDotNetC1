@@ -1,9 +1,11 @@
 ﻿using Banking;
 using ClassExample;
+using ClassLibraryForLINQ;
 using ControlStatements;
 using Myproject;
 using System.Collections.Generic;
-using ClassLibraryForLINQ;
+using System.Linq;
+using static System.Net.Mime.MediaTypeNames;
 namespace ConsoleAppDotNetC1
 {
     public class Program
@@ -245,7 +247,9 @@ namespace ConsoleAppDotNetC1
 
                */
 
-            LinqExamples.Ex();
+            //LinqExamples.Ex();
+
+            Lookup.T1();
         }
     }
 }
