@@ -19,7 +19,6 @@ namespace ClassExample
             }
             return len;
         }
-
         public static void Exe()
         {
             string Filename = "C:\\Users\\m.a.khaja.moinuddin\\OneDrive - Accenture\\Desktop\\Myfile.txt";
@@ -34,8 +33,6 @@ namespace ClassExample
             Console.WriteLine("Task 5");
             Console.WriteLine("Task 6");
         }
-
-
         public static async Task<int> Call1(string Filename)
         {
             int len = 0;
@@ -47,7 +44,6 @@ namespace ClassExample
             }
             return len;
         }
-
         public static async void Exe1()
         {
             string Filename = "C:\\Users\\m.a.khaja.moinuddin\\OneDrive - Accenture\\Desktop\\Myfile.txt";
@@ -63,6 +59,5 @@ namespace ClassExample
             Console.WriteLine("Task 5");
             Console.WriteLine("Task 6");
         }
-
     }
 }

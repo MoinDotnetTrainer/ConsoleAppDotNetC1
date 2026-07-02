@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Banking\Banking.csproj" />
     <ProjectReference Include="..\ClassExample\ClassExample.csproj" />
+    <ProjectReference Include="..\ClassLibraryForLINQ\ClassLibraryForLINQ.csproj" />
     <ProjectReference Include="..\ControlStatements\ControlStatements.csproj" />
     <ProjectReference Include="..\Myproject\Myproject.csproj" />
   </ItemGroup>

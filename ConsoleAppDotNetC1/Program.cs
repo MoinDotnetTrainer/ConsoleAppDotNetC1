@@ -3,6 +3,7 @@ using ClassExample;
 using ControlStatements;
 using Myproject;
 using System.Collections.Generic;
+using ClassLibraryForLINQ;
 namespace ConsoleAppDotNetC1
 {
     public class Program
@@ -237,10 +238,14 @@ namespace ConsoleAppDotNetC1
               */
 
 
-            Task t1 = new Task(AsyncProggramming.Exe1);
-            t1.Start();
-            t1.Wait();
-            Console.ReadKey();
+            /*   Task t1 = new Task(AsyncProggramming.Exe1);
+               t1.Start();
+               t1.Wait();
+               Console.ReadKey();
+
+               */
+
+            LinqExamples.Ex();
         }
     }
 }
